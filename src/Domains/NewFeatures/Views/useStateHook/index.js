@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from "../../../../Core/Layout"
 import Example from "./Example"
-import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-import { convertFromRaw } from 'draft-js';
 
 
 const UseStateView = () => {
@@ -29,11 +27,11 @@ const UseStateView = () => {
     <section className="flex flex-col justify-center items-center">
         <p className="text-2xl text-gray-700 mb-6"> useState Hook - Example </p>
         <Example initialCount={2}/>
-        <div className="p-2 flex flex-col mt-8 items-center">    
+        <div className="p-2 flex flex-col mt-6 items-center">    
             <p className="font-light text-xl text-gray-700"> See the code: </p>
         </div>
         <textarea
-                className="w-1/3 h-full text-gray-800" 
+                className="w-1/2 h-full text-gray-800" 
                   disabled
                   rows="10"
                   value={content}

@@ -11,7 +11,7 @@ const Home = () => (
     <div className=" flex w-1/2 flex-col justify-center items-start">
       {
       topics.map((topic) => (
-        <TopicComponent key={topic} name={topic.name} description={topic.description} />
+        <TopicComponent route={topic.route} key={topic} name={topic.name} description={topic.description} />
       ))
     }
     </div>
