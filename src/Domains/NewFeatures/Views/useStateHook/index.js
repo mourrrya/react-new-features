@@ -4,7 +4,7 @@ import Example from "./Example"
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 
-const UseStateView = () => {
+const View = () => {
   const content = `
   const Example =  ({initialCount}) => { 
     const [count, setCount] = useState(initialCount)
@@ -25,7 +25,7 @@ const UseStateView = () => {
   return (
   <Layout>
     <section className="flex flex-col justify-center items-center">
-        <p className="text-2xl text-gray-700 mb-6"> useState Hook - Example </p>
+        <p className="text-2xl text-gray-700 mb-6"> useState Hook </p>
         <Example initialCount={2}/>
         <div className="p-2 flex flex-col mt-6 items-center">    
             <p className="font-light text-xl text-gray-700"> See the code: </p>
@@ -40,4 +40,4 @@ const UseStateView = () => {
   </Layout>
 )}
 
-export default UseStateView;
+export default View;
