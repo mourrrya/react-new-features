@@ -1,8 +1,8 @@
 import React from 'react';
+
 import Layout from "../../../../Core/Layout"
 import Example from "./Example"
-import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-
+import Explanation from "../../../../Core/Components/Explanation"
 
 const View = () => {
   const content = `
